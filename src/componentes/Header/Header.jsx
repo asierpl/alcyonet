@@ -1,24 +1,22 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Header.css'
 
-
-let headerNav = [
-    {id: 0 , title : 'Inicio'      , href : '#'},
-    {id: 1 , title : 'Proyectos'   , href : '#'},
-    {id: 2 , title : 'Sobre mí'     , href : '#'}
-]
-
-
-// let headerRedes = [
-//     {id : 0 , title : 'GitHub'   , href : '#' , src : '#' , alt : 'Imagen'},
-//     {id : 1 , title : 'Linkedin' , href : '#' , src : '#' , alt : 'Imagen'}
-// ]
+import { NavLink } from 'react-router-dom'
 
 const { VITE_URL_API } = import.meta.env
 
 export const Header = () => {
 
     const [ datos , setDatos ] = useState({ headerNav : []})
+
+    const [ active , setActive ] = useState(null)
+    const headerHandler = (valor) => setActive(valor)
+
+    const [menu , setMenu] = useState(false)
+    const menuToggle = () => setMenu(!menu)
+
+    const [mouseOver , setMouseOver] = useState('')
+    const mouseHandler = (raton)=> setMouseOver(raton)
 
     useEffect( () => {
 
@@ -38,14 +36,7 @@ export const Header = () => {
     } , [])
 
 
-    const [ active , setActive ] = useState(null)
-    const headerHandler = (valor) => setActive(valor)
-
-    const [menu , setMenu] = useState(false)
-    const menuToggle = () => setMenu(!menu)
-
-    const [mouseOver , setMouseOver] = useState('')
-    const mouseHandler = (raton)=> setMouseOver(raton)
+    
     
     return(
         <>
@@ -101,7 +92,7 @@ const HeaderNav = (props) => {
     return(
         <>
         <li className="HeaderNav-li" onMouseEnter={()=>headerHandler(id)} onMouseLeave={()=>headerHandler(null)}>
-            <a href={href} className="HeaderNav-a">{title}</a>
+            <NavLink to={href} className="HeaderNav-a">{title}</NavLink>
             <hr className={`Header-line ${active === id ? 'isVisible' : ''}`} />
         </li>
         </>

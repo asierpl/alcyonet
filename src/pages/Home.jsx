@@ -3,7 +3,7 @@ import { Header } from "../componentes/Header/Header"
 import { Inicio } from "../componentes/Inicio/Inicio"
 
 export const Home = () => {
-
+    
     return(
         <>
         <Header/>

@@ -1,8 +1,6 @@
 import './SobreMi.css'
 
 
-
-
 export const SobreMi = () => {
 
     return(
