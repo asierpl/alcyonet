@@ -1,0 +1,41 @@
+.Inicio{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+    /* background-color: aquamarine; */
+}
+.Inicio-logo{
+    width: 15rem;
+    /* background-color: blue; */
+}
+.Inicio-img{
+    width: 100%;
+    border-radius: 50%;
+    
+}
+.Inicio-texto{
+    /* background-color: rgb(241, 153, 153); */
+    width: 100%;
+    margin: auto;
+}
+.Inicio-h2{
+    font-size: 3em;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 8px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 1;
+}
+
+@media(max-width : 768px){
+
+    .Inicio-h2{
+
+    }
+}

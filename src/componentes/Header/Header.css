@@ -1,0 +1,169 @@
+    
+.Header{
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 9px;
+    background: #4f4f4f;
+    box-shadow: inset 16px 16px 21px #333333,
+            inset -16px -16px 21px #6b6b6b;
+    color: white;
+
+}
+.HeaderNav{
+    width: 40%;
+}
+.HeaderNav-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5em;
+    font-family:'Times New Roman', Times, serif;
+}
+.HeaderNav-li{
+    width: 33%;
+    text-align: center;
+}
+/* .HeaderNav-a{
+
+} */
+
+.Menu-btn{
+    display: none;
+    width: 2rem;
+    cursor: pointer;
+}
+.Cerrar-menu{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+.HeaderRedes{
+   width: 10%;
+}
+.HeaderRedes-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.HeaderRedes-li{
+    width: 1.5rem;
+}
+
+.HeaderRedes-li:hover{
+    color: black;
+}
+
+.Header-line{
+    min-height: 0.2vh;
+    margin-top: .3rem;
+    background-color: rgb(255, 255, 255);
+    transform: scaleX(0);
+    transition: transform 1s ease;
+    transform-origin: left;
+}
+
+.Header-line.isVisible{
+    transform: scaleX(1);
+}
+
+
+@media(max-width : 1328px){
+    .HeaderNav{
+       width: 50%;
+    }
+    .HeaderRedes{
+        width: 15%;
+     }
+}
+@media(max-width : 1024px){
+    .HeaderNav{
+       width: 60%;
+    }
+    .HeaderRedes{
+        width: 20%;
+     }
+}
+@media(max-width : 960px){
+    .HeaderNav{
+       width: 70%;
+    }
+    .HeaderRedes{
+        width: 25%;
+     }
+}
+
+@media(max-width : 768px){
+    .Menu-btn{
+        display: flex;
+        opacity: 1;
+    }
+    .HeaderNav{
+        
+        right: 0;
+        top: 0;
+        height: 100vh;
+        display: none;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .HeaderNav.isVisible{
+        position: absolute;
+        width: 50vw;
+        max-width: 20rem;
+        padding: 1rem;
+        background-color: rgb(22, 22, 22);
+        display: flex;
+        
+    }
+    .HeaderNav-ul{
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content:flex-start;
+        align-items: start;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .HeaderNav-li{
+        width: 100%;
+        text-align: start;
+    }
+    .HeaderNav-li:hover{
+        text-decoration: underline;
+    }
+    .Header-line{
+        display: none;
+    }
+
+}
+
+@media(max-width : 480px){
+    .HeaderRedes-ul{
+        gap: 1rem;
+    }
+    .HeaderRedes-li{
+        min-width: 1.5rem;
+    }
+}
+
+@media(max-width : 320px){
+    .HeaderRedes-ul{
+        gap: .5rem;
+    }
+    .HeaderRedes-li{
+        min-width: 1.2rem;
+    }
+}

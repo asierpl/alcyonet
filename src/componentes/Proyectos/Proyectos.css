@@ -1,0 +1,36 @@
+.Proyectos {
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0;   
+}
+
+.Proyectos-ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.Proyectos-li {
+    
+}
+
+.Proyectos-a {
+    
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+.Proyectos-iframe {
+    width: 100%;
+    min-height: 70vh;
+}
+
+.Proyectos-iframe:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
