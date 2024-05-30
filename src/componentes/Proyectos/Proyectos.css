@@ -9,28 +9,46 @@
     flex-flow: column nowrap;
     justify-content: center;
     gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .Proyectos-li {
-    
+    position: relative;
+    list-style: none;
 }
 
 .Proyectos-a {
-    
+    display: block;
     text-decoration: none;
     color: black;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: white;
+    border: 1px solid #000000;
     border-radius: 5px;
-    
+    overflow: hidden;
+}
+
+.Proyectos-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .Proyectos-iframe {
     width: 100%;
-    min-height: 70vh;
+    height: 70vh;
+    border: none;
 }
 
-.Proyectos-iframe:hover {
+.Proyectos-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.Proyectos-a:hover .Proyectos-overlay {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
