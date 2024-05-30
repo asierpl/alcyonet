@@ -75,8 +75,8 @@
     transform-origin: left;
 }
 
-.Header-line.isVisible{
-    transform: scaleX(1);
+.HeaderNav-li:hover .Header-line { 
+    transform: scaleX(1); 
 }
 
 

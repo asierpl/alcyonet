@@ -9,8 +9,7 @@ export const Header = () => {
 
     const [ datos , setDatos ] = useState({ headerNav : []})
 
-    const [ active , setActive ] = useState(null)
-    const headerHandler = (valor) => setActive(valor)
+
 
     const [menu , setMenu] = useState(false)
     const menuToggle = () => setMenu(!menu)
@@ -44,8 +43,8 @@ export const Header = () => {
             <nav className={`HeaderNav ${menu ? 'isVisible' : ''}`}>
                 <ul className="HeaderNav-ul">
                     {datos.headerNav.map (page => 
-                        <HeaderNav key={page.id} {...page} active = {active} 
-                        mouseHandler={mouseHandler} headerHandler={headerHandler} />
+                        <HeaderNav key={page.id} {...page} mouseOver = {mouseOver} 
+                        mouseHandler={mouseHandler} setMouseOver={setMouseOver} />
                     )}
                 </ul>
                 {menu && 
@@ -86,14 +85,14 @@ export const Header = () => {
 
 const HeaderNav = (props) => {
     
-    const {href , title , active , headerHandler , id} = props
+    const {href , title , mouseOver , setMouseOver , id} = props
     
 
     return(
         <>
-        <li className="HeaderNav-li" onMouseEnter={()=>headerHandler(id)} onMouseLeave={()=>headerHandler(null)}>
+        <li className="HeaderNav-li" onMouseEnter={()=>setMouseOver(id)} onMouseLeave={()=>setMouseOver(null)}>
             <NavLink to={href} className="HeaderNav-a">{title}</NavLink>
-            <hr className={`Header-line ${active === id ? 'isVisible' : ''}`} />
+            <hr className={`Header-line ${mouseOver === id ? 'isVisible' : ''}`} />
         </li>
         </>
     )

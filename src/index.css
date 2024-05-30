@@ -10,12 +10,16 @@
 
 */
 /* Aquí definimos las Custom properties */
+
 :root {
   --negro: #393939;
   /* Tipografía */
   --tipo-principal: Helvetica, Arial, sans-serif;
   --tipo-secundaria: Verdana;
   background: #757575;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Las adaptamos al modo oscuro */
