@@ -16,6 +16,7 @@ export const Inicio = () => {
 
             <div className="Inicio-texto">
                 <h2 className="Inicio-h2">Full Stack Developer</h2>
+                <h3 className="Inicio-h3">Asier Pérez</h3>
             </div>
 
 

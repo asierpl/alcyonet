@@ -23,7 +23,7 @@
     display: block;
     text-decoration: none;
     color: black;
-    border: 1px solid #000000;
+    border: 4px solid #951616;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -36,7 +36,7 @@
 
 .Proyectos-iframe {
     width: 100%;
-    height: 70vh;
+    height: 62vh;
     border: none;
 }
 

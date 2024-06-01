@@ -10,8 +10,8 @@
     padding: 2rem;
     border-radius: 9px;
     background: #4f4f4f;
-    box-shadow: inset 16px 16px 21px #333333,
-            inset -16px -16px 21px #6b6b6b;
+    box-shadow: inset 16px 16px 21px #2c2c2c,
+            inset -16px -16px 21px #626161;
     color: white;
 
 }
@@ -111,7 +111,6 @@
         opacity: 1;
     }
     .HeaderNav{
-        
         right: 0;
         top: 0;
         height: 100vh;
@@ -120,13 +119,12 @@
         z-index: 1;
     }
     .HeaderNav.isVisible{
-        position: absolute;
+        position: fixed;
         width: 50vw;
         max-width: 20rem;
         padding: 1rem;
         background-color: rgb(22, 22, 22);
         display: flex;
-        
     }
     .HeaderNav-ul{
         width: 50%;
@@ -136,6 +134,7 @@
         align-items: start;
         gap: 2rem;
         padding: 1rem;
+        
     }
     .HeaderNav-li{
         width: 100%;

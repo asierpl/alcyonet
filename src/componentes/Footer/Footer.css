@@ -2,7 +2,7 @@
     width: 80%;
     margin: auto;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    bottom: 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -11,7 +11,7 @@
     border-radius: 9px;
     background: #4f4f4f;
     box-shadow: inset 16px 16px 21px #2c2c2c,
-            inset -16px -16px 21px #414141;
+            inset -16px -16px 21px #626161;
     color: white;
 }
 
@@ -124,6 +124,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 2rem;
+        margin-bottom: 1rem;
     }
     .Footer-logo{
         width: 20%;
@@ -166,6 +167,9 @@
 }
 @media(max-width : 320px){
     
+    .Footer-contacto{
+        width: 100%; 
+    }
     .Btn-contacto{
         font-size: 1em;
     }
