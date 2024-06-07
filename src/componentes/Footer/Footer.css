@@ -35,6 +35,7 @@
     border: 2px solid white;
     border-radius: 5px; 
     background: #202020;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white; 
     font-size: 1.7em; 
     text-transform: uppercase; 
@@ -70,9 +71,7 @@
     .Footer-contacto{
         width: 40%; 
     }
-    .FooterRedes{
-        
-    }
+    
     .FooterRedes-ul{
         gap: 1.5rem;
     }
@@ -85,9 +84,7 @@
     .Btn-contacto{
         font-size: 1.5em;
     }
-    .FooterRedes{
-        
-    }
+    
     .FooterRedes-li{
         width: 1.3rem;
     }
@@ -104,9 +101,7 @@
     .Btn-contacto{
         font-size: 1.4em;
     }
-    .FooterRedes{
-        
-    }
+    
     .FooterRedes-ul{
         gap: .9rem;
     }

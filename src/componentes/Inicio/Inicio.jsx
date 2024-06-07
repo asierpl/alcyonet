@@ -4,8 +4,6 @@ import './Inicio.css'
 export const Inicio = () => {
 
 
-
-
     return(
         <>
         <div className="Inicio">
