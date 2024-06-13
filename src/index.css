@@ -17,10 +17,8 @@
   --tipo-principal: Helvetica, Arial, sans-serif;
   --tipo-secundaria: Verdana;
 
-  border-radius: 0px;
-  background: linear-gradient(145deg, #949494, #3e3e3e);
-  box-shadow:  17px 17px 16px #292929,
-             -17px -17px 16px #757575;
+  background: rgb(13,11,11);
+background: linear-gradient(0deg, rgba(13,11,11,1) 14%, rgba(119,118,118,1) 75%);
              
   flex: 1;
   display: flex;

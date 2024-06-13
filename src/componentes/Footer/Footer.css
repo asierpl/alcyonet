@@ -9,8 +9,8 @@
     align-items: center;
     padding: 1rem 3rem;
     border-radius: 9px;
-    background: #4f4f4f;
-    box-shadow: inset 16px 16px 21px #2c2c2c,
+    background: #464545;
+    box-shadow: inset 16px 16px 21px #666666,
             inset -16px -16px 21px #626161;
     color: white;
 }
