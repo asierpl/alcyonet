@@ -3,12 +3,14 @@ import './SobreMi.css'
 
 const { VITE_URL_API } = import.meta.env
 
+
 export const SobreMi = () => {
 
     const [ datos , setDatos ] = useState({ about : {}})
     
     const {hrefYo  , altYo  , h2  , pA  , pB  , pC } = datos.about
 
+    
     useEffect( () => {
 
         let controller = new AbortController()

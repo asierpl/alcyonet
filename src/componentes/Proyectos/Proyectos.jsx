@@ -1,8 +1,8 @@
 import './Proyectos.css'
 
 let proyectos = [
-    {id : 0 , href : 'https://proyecto-react-teal.vercel.app/' , title : 'Bonanza'},
-    {id : 1 , href : 'https://luma-eta.vercel.app/' , title : 'LUMA'},
+    { id : 0 , href : 'https://proyecto-react-teal.vercel.app/' , title : 'Bonanza' },
+    { id : 1 , href : 'https://luma-eta.vercel.app/' , title : 'LUMA' },
 ]
 
 export const Proyectos = () => {

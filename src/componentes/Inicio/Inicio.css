@@ -7,48 +7,37 @@
     align-items: center;
     gap: 2rem;
     padding: 7rem 1rem;
-    
-    
-    
 }
+
 .Inicio-logo{
     width: 15rem;
-    
 }
+
 .Inicio-img{
     width: 100%;
     border-radius: 50%;
-    
 }
+
 .Inicio-texto{
-    /* background-color: rgb(241, 153, 153); */
     width: 100%;
     margin: auto;
 }
-.Inicio-h2{
+
+.Inicio-h2, .Inicio-h3{
     font-size: 3em;
-    font-family:'Times New Roman', Times, serif;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    color: rgb(255, 255, 255);
     text-shadow: 5px 8px 8px rgba(0, 0, 0, 0.5);
     text-align: center;
+    color: rgb(255, 255, 255);
     line-height: 1;
-    
 }
 
 .Inicio-h3{
     margin-top: .5rem;
     font-size: 2em;
-    font-family:'Times New Roman', Times, serif;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 8px 8px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    line-height: 1;
-    
 }
+
 
 @media(max-width : 768px){
     .Inicio-h2{
@@ -66,7 +55,6 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     .Inicio-h3{
         font-size: 1.5em;       
     }
-    
 }
 
 @media(max-width : 320px){
@@ -78,7 +66,5 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .Inicio-logo{
         width: 13rem;
-        
     }
-    
 }

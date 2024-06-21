@@ -1,18 +1,19 @@
 .Footer{
-    width: 80%;
-    margin: auto;
-    margin-top: 1rem;
     bottom: 0;
+    width: 80%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
     padding: 1rem 3rem;
+    color: white;
     border-radius: 9px;
     background: #464545;
     box-shadow: inset 16px 16px 21px #666666,
             inset -16px -16px 21px #626161;
-    color: white;
 }
 
 .Footer-logo{
@@ -31,13 +32,13 @@
 .Btn-contacto {
     width: 100%;
     padding: 0.5rem 1rem; 
-    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.7em; 
+    background: #202020;
+    color: white; 
     border: 2px solid white;
     border-radius: 5px; 
-    background: #202020;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white; 
-    font-size: 1.7em; 
+    cursor: pointer;
     text-transform: uppercase; 
     transition: background-color 0.3s, color 0.3s; 
 }
@@ -46,7 +47,6 @@
     background-color: white;
     color: #5e5e5e; 
 }
-
 
 .FooterRedes{
     width: 33%;
@@ -59,9 +59,11 @@
     align-items: center;
     gap: 2rem;
 }
+
  .FooterRedes-li{
      width: 1.5rem;
 }
+
 .FooterRedes-li:hover {
     color: #000000; 
 }
@@ -71,7 +73,6 @@
     .Footer-contacto{
         width: 40%; 
     }
-    
     .FooterRedes-ul{
         gap: 1.5rem;
     }
@@ -101,7 +102,6 @@
     .Btn-contacto{
         font-size: 1.4em;
     }
-    
     .FooterRedes-ul{
         gap: .9rem;
     }
@@ -158,8 +158,8 @@
     .FooterRedes-ul{
         gap: 1.5rem;
     }
-    
 }
+
 @media(max-width : 320px){
     
     .Footer-contacto{
@@ -171,5 +171,4 @@
     .FooterRedes-ul{
         gap: 1rem;
     }
-    
 }
