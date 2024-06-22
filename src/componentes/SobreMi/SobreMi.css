@@ -33,6 +33,7 @@
     box-shadow: inset 7px 7px 6px #757575,
             inset -7px -7px 6px #757575;
     color: rgb(25, 25, 25);
+    hyphens: none;
 }
 
 .SobreMi-h2{
@@ -83,12 +84,14 @@
 }
 
 @media(max-width : 480px){
-
+    .Container-texto{
+        padding: 1.5rem;
+    }
     .SobreMi-h2{
         font-size: 1.5em;
     }
     .SobreMi-p{
-        font-size: 1em;
+        font-size: .9em;
     }
 }
 
